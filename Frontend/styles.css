@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2f33; /* Dark background for contrast */
+    color: #ffffff; /* White text for readability */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px; /* Maximum width for the container */
+    margin: auto; /* Center the container */
+    background-color: #23272a; /* Darker background for container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+
+header {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Margin below header */
+}
+
+h1 {
+    font-size: 24px; /* Size of main heading */
+}
+
+#user-info {
+    display: flex; /* Flexbox for user info */
+    align-items: center; /* Center items vertically */
+}
+
+#profile-pic {
+    border-radius: 50%; /* Circular profile picture */
+    width: 50px; /* Increased size for visibility */
+    height: 50px; /* Increased size for visibility */
+    margin-right: 10px; /* Space between profile pic and name */
+}
+
+#logout-button {
+    background-color: #f04747; /* Red color for logout button */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Increased padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background change */
+}
+
+#logout-button:hover {
+    background-color: #e02e2e; /* Darker red on hover */
+}
+
+main {
+    text-align: center; /* Center text in main */
+}
+
+#stats {
+    display: flex; /* Flexbox for stats layout */
+    justify-content: space-around; /* Space out stats evenly */
+    margin-top: 20px; /* Space above stats */
+}
+
+.stat {
+    background-color: #7289da; /* Blue background for stats */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside stat boxes */
+    width: 30%; /* Width of each stat box */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.stat:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.command {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7289da; /* Blue background for command box */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0; /* Margin between command boxes */
+}
+
+.command-toggle {
+    margin-left: 10px; /* Space between label and checkbox */
+}
+
+/* Other styles remain unchanged */
+
+
+h2 {
+    margin-bottom: 20px; /* Space below subheading */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #stats {
+        flex-direction: column; /* Stack stats vertically on small screens */
+    }
+
+    .stat {
+        width: 100%; /* Full width for stat boxes */
+        margin-bottom: 10px; /* Space between stacked items */
+    }
+}

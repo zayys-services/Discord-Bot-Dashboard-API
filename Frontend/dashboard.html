@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="dashboard" class="container">
+        <header>
+            <h1>Welcome to Your Dashboard</h1>
+            <div id="user-info">
+                <img id="profile-pic" src="default-profile-pic.jpg" alt="Profile Picture">
+                <span id="user-name"></span>
+            </div>
+        </header>
+        <div id="stats">
+            <div class="stat">
+                <h2>Total Users: <span id="total-users">0</span></h2>
+            </div>
+            <div class="stat">
+                <h2>Total Servers: <span id="total-servers">0</span></h2>
+            </div>
+            <div class="stat">
+                <h2>Latency: <span id="latency">0</span> ms</h2>
+            </div>
+        </div>
+        <h2>Select a Server:</h2>
+        <select id="server-select"></select>
+        <h2>Manage Commands:</h2>
+        <div id="commands">
+            <!-- Dynamic command management will be injected here -->
+        </div>
+        <button id="logout">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
